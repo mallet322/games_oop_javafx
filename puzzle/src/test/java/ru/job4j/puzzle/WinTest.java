@@ -1,12 +1,9 @@
 package ru.job4j.puzzle;
 
-import org.junit.Ignore;
+import static org.hamcrest.core.Is.is;
+import static org.junit.Assert.assertThat;
 import org.junit.Test;
 
-import static org.hamcrest.core.Is.is;
-import static org.junit.Assert.*;
-
-@Ignore
 public class WinTest {
     @Test
     public void whenVerticalWin() {
@@ -55,4 +52,5 @@ public class WinTest {
         };
         assertThat(Win.check(board), is(false));
     }
+
 }
